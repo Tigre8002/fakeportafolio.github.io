@@ -1,0 +1,65 @@
+.projects h2{
+    color: #52A8FF;
+}
+
+.python-project {
+    margin-top: 40px;
+}
+
+.python-project h1 {
+    color: white;
+}
+
+.python-project p {
+    margin-top: 10px;
+}
+
+.python-project img {
+    margin-top: 20px;
+    width: 700px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.backup-git {
+    margin-top: 40px;
+}
+
+.backup-git h1 {
+    color: white;
+}
+
+.backup-git p {
+    margin-top: 10px;
+}
+
+.backup-git img {
+    margin-top: 20px;
+    width: 700px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.gitlink-python{
+    display: flex; 
+    gap: 10px; 
+    margin-top: 10px;
+    padding: 10px 20px; 
+    border: none; 
+    background-color: #007bff;
+    color: white; 
+    cursor: pointer; 
+    border-radius: 5px;
+}
+
+.gitlink-backup{
+    display: flex; 
+    gap: 10px; 
+    margin-top: 10px;
+    padding: 10px 20px; 
+    border: none; 
+    background-color: #007bff;
+    color: white; 
+    cursor: pointer; 
+    border-radius: 5px;
+}

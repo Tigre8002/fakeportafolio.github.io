@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portafolio de Tigre8002</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleProjects.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script>
+        function copiarTexto(texto) {
+            const temporal = document.createElement('textarea');
+            temporal.value = texto;
+
+            document.body.appendChild(temporal);
+
+            temporal.select();
+            temporal.setSelectionRange(0, 99999); 
+
+            document.execCommand('copy');
+
+            document.body.removeChild(temporal);
+
+            alert('Texto copiado: ' + texto);
+        }
+    </script>
+
+    <nav>
+        <ul>
+            <li><a href="">Inicio</a></li>  
+            <li><a href="">Proyectos</a></li>
+            <li><a href="">Habilidades</a></li>
+            <li><a href="">Sobre mi</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <header>
+            <div class="profile-header">
+                <img class="profile" src="sources/images/profile.png" alt="">
+                <h1>Tigre8002</h1>
+                <p class="rrole">Desarrollador</p>
+                <p class="description">Convierto lo que me pidas mediante un código limpio y mantenible.</p>
+                <p class="location">España</p>
+                <div class="contact-buttons"> 
+                    <button onclick="copiarTexto('tigre8002')">Discord</button>
+                    <button onclick="copiarTexto('https://github.com/Tigre8002')">GitHub</button>
+                </div>
+
+                <!-- <img class="git" src="sources/images/github.png" alt=""> -->
+            </div>
+        </header>
+    
+        <main>
+            <section class="about-me">
+                <p>Hola soy un desarrollador, llamado Tigre8002.</p>
+            </section>
+
+            <section class="projects">
+                <h2>Proyectos</h3>
+
+                <section class="python-project">
+                    <h1>Password Manager Python</h1>
+                    <p>Is a simple password manager made using Flet.</p>
+                    <img src="sources/images/passwordManager.png" alt="">
+                    <button class="gitlink-python" onclick="copiarTexto('https://github.com/Tigre8002/PasswordManagerPY')">Get Link</button>
+                </section>
+
+                <section class="backup-git">
+                    <h1>Backup Git Shell</h1>
+                    <p>Is a simple program made by terminal, to make gits backup easy with terminal.</p>
+                    <img src="sources/images/Backup.png" alt="">
+                    <button class="gitlink-python" onclick="copiarTexto('https://github.com/Tigre8002/BackupGitShell')">Get Link</button>
+                </section>
+            </section>
+            
+            <section class="lenguages">
+                <h3 class="lenguages-h3">Tecnologías y habilidades</h3>
+                <ul>
+                    <img src="sources/images/css.png" alt="">
+                    <img src="sources/images/git.png" alt="">
+                    <img src="sources/images/github.png" alt="">
+                    <img src="sources/images/html.png" alt="">
+                    <img src="sources/images/js.png" alt="">
+                    <img src="sources/images/python.png" alt="">
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
